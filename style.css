@@ -1,0 +1,147 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #000;
+    /* Full black background */
+    color: #fff;
+    /* White text color for readability */
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    /* Blue color for the logo */
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    color: #bfe8ff;
+    border-color: #434;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3em;
+    /* Font size similar to CloudCores */
+    font-weight: bold;
+    line-height: 1.2;
+    max-width: 80%;
+}
+
+.hero h1 .highlight {
+    color: #007bff;
+    /* Blue accent color for 'All Abilities' */
+}
+
+.hero p {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #bbb;
+    margin: 10px 0 30px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    /* Blue accent color for button */
+    color: #fff;
+    font-size: 1em;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #deddde;
+    color: #000;
+}
+
+.gray-bg {
+    background-color: #222;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: safe;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    margin-left: 5%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 2vh;
+    }
+}
