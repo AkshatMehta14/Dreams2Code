@@ -28,6 +28,9 @@ header {
     color: #007bff;
     /* Blue color for the logo */
     letter-spacing: 1px;
+    display: flex;
+        align-items: center;
+        gap: 5%
 }
 
 nav ul {
@@ -133,7 +136,7 @@ nav ul li a:hover {
     margin-left: 5%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 100px rgba(154, 160, 185, .2), 0 15px 40px rgba(166, 173, 201, .4);
     transition: transform 0.3s ease;
 }
 
