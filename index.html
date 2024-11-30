@@ -18,6 +18,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Dreams2Code" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script src="js/three.min.js"></script>
+    <script src="js/vanta.clouds.min.js"></script>
 </head>
 
 <body>
@@ -37,15 +39,24 @@
     </header>
 
     <section class="hero">
-        <h1>Empowering <span class="highlight">All Abilities</span> Through Technology</h1>
+        <h1>Empowering
+            <marquee behavior="scroll" direction="up" scrolldelay="50" height="57.6px">
+                <span class="highlight">All Abilities</span><br>
+                <span class="highlight">x</span><br>
+                <span class="highlight">y</span><br>
+                <span class="highlight">z</span><br>
+                <span class="highlight">a</span>
+            </marquee>
+            Through Technology
+        </h1>
         <p>Coding Beyond Abilities, Dreaming Beyond Boundaries</p>
         <a href="#join" class="cta-button">Join Us</a>
     </section>
 
     <section class="images">
         <div class="image-container">
-            <img src="images/placeholder.png" width="500px">
-            <img src="images/placeholder.png" width="400px">
+            <img src="images/teaching1.png" width="500px">
+            <img src="images/teaching2.png" width="400px">
         </div>
     </section>
 
@@ -56,6 +67,22 @@
 
     <!-- temporary for scrolling -->
     <div style="height: 100vh" />
+    <div id="cloudBackground" />
+    <script defer>
+        VANTA.CLOUDS({
+            el: "#cloudBackground",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            skyColor: 0x0,
+            sunColor: 0x185cff,
+            sunGlareColor: 0x6e32ff,
+            sunlightColor: 0x30daff,
+            speed: 0.40
+        })
+    </script>
 </body>
 
 </html>
