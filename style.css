@@ -7,14 +7,14 @@
 }
 
 body {
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", serif;
     background-color: #000; /* Full black background */
     color: #fff; /* White text color for readability */
     overflow-x: hidden;
 }
 
 h1, h2, h3 {
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", serif;
 }
 
 
@@ -81,21 +81,30 @@ nav ul li a:hover {
     animation: fadeIn 1.5s ease-in-out;
     transform: translateY(-25%); /* Move the text further upward */
     padding-top: 0; /* Remove any additional padding */
+    margin-top: 12vh;
 }
 
-
-
-.hero h1 {
-    font-size: 3em; /* Font size similar to CloudCores */
+.hero h1,
+.hero h2 {
+    font-size: 5em;
+    /* Font size similar to CloudCores */
     font-weight: bold;
     line-height: 1.2;
     max-width: 80%;
+    text-shadow:
+            0 0 5px #fff,
+            0 0 10px #0044ff,
+            0 0 15px #0019fa,
+            0 0 40px #0e93ff;
 }
 
 .hero h1 .highlight {
     color: #007bff; /* Blue accent color for 'All Abilities' */
 }
 
+.hero h2 {
+    font-size: 4em;
+}
 .hero p {
     font-size: 1.2em;
     font-weight: 300;
@@ -177,12 +186,6 @@ marquee {
     text-align: center;
 }
 
-#what-do-we-do h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 30px;
-}
-
 #what-do-we-do p {
     font-size: 1.1em;
     color: #555;
@@ -226,9 +229,7 @@ marquee {
 #what-do-we-do h2 {
     font-size: 2.8em;
     font-weight: bold;
-    background-image: linear-gradient(to right, #6545d8, #034efe); /* Purple to blue gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -240,3 +241,59 @@ marquee {
     color: #ccc; /* Slightly lighter text color */
 }
 
+.statistics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #111;
+    width: 80%;
+    padding: 5% 0;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid transparent;
+    border-radius: 16px;
+    margin-bottom: 5%;
+
+}
+
+.statement {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 12% 0 0;
+    background-color: #202020;
+    border: 3px solid transparent;
+    border-radius: 32px;
+    padding: 7% 9%;
+    text-align: center;
+}
+
+.statement p {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 6%;
+}
+
+.statement hr {
+    margin: 5% 0;
+}
+
+.statement span {
+    font-size: 24px;
+    color: #8a8a8c;
+    font-weight: 300;
+}
+
+.stats div {
+    font-size: 32px;
+    padding: 25% 0;
+}
+
+.stats h2 {
+    font-size: 64px;
+}
