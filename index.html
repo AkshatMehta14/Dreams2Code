@@ -22,6 +22,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <script src="js/three.min.js"></script>
     <script src="js/vanta.clouds.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -51,8 +52,8 @@
 
    
 
-    <section id="what-do-we-do" class="gray-bg">
-        <div class="container">
+    <section id="what-do-we-do" class="gray-bg" style="display: flex; flex-direction: column;">
+        <div class="container" data-aos="fade-down" data-aos-duration="1000">
             <h2>What Do We Do?</h2>
             <p>
                 At Dreams2Code, we empower underprivileged and disabled children by teaching them coding and STEM skills,
@@ -64,12 +65,15 @@
                 digital tools to bring impactful change to their online presence. This collaboration fosters growth for 
                 both the students and the businesses they assist, creating a cycle of mutual benefit and innovation.
             </p>
-            <div class="image-container">
-                <img src="images/teaching1.png" alt="Empowering through coding">
-                <img src="images/teaching2.png" alt="Connecting with businesses">
-            </div>
+            
+        </div>
+        <div class="image-container" data-aos="fade-down" data-aos-duration="1000">
+            <img src="images/teaching1.png" style="flex: 1;" width="100%" alt="Empowering through coding">
+            <img src="images/teaching2.png" style="flex: 1" alt="Connecting with businesses">
         </div>
     </section>
+
+    
 
 
 
@@ -79,7 +83,7 @@
     </section>
     <section class="statistics gray-bg">
         <div class="stat-wrapper">
-            <div class="statement">
+            <div class="statement" data-aos="fade-down" data-aos-duration="1000">
                 <p>"At Dreams2Code, we equip the overlooked to rewrite their futures and rebuild their communities—one line
                     of code at a
                     time. This isn’t just tech; it’s power, it’s purpose, and it’s the spark for a movement that changes
@@ -88,17 +92,17 @@
                 <span>Akshat Mehta, CEO</span>
             </div>
             <div class="stats">
-                <div>
+                <div data-aos="fade-down" data-aos-duration="1000">
                     <h2>1000+</h2>
                     students taught
                 </div>
                 <hr>
-                <div>
+                <div data-aos="fade-down" data-aos-duration="1000">
                     <h2>120+</h2>
                     teachers/interns
                 </div>
                 <hr>
-                <div>
+                <div data-aos="fade-down" data-aos-duration="1000">
                     <h2>15+</h2>
                     projects deployed
                 </div>
@@ -123,6 +127,11 @@
             sunlightColor: 0x30daff,
             speed: .90
         })
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
     </script>
 </body>
 
