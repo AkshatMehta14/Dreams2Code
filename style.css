@@ -300,3 +300,80 @@ marquee {
 .stats h2 {
     font-size: 64px;
 }
+
+
+#projects {
+    padding: 60px 20px;
+    background-color: #222; /* Match gray-bg styling */
+    color: #fff;
+}
+
+#projects h2 {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#projects h3{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Ensure this property is being applied */
+    padding: 20px; /* Add some padding around the grid */
+    justify-content: center; /* Center the cards within the container */
+}
+
+.project-card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%; /* Ensure the cards stretch evenly within their grid column */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #bbb;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.project-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #bfe8ff;
+}
