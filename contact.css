@@ -1,5 +1,6 @@
 /* General section styling */
 #contact {
+    margin-top: 20vh;
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center;    /* Center vertically */
