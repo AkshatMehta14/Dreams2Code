@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreams2Code</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Dreams2Code" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script src="js/three.min.js"></script>
+  <script src="js/vanta.clouds.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo-cropped.png" width="50px">
+      Dreams2Code
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="#classes">Our Classes</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>About Us</h2>
+  </section>
+
+
+
+  <section id="what-do-we-do" class="gray-bg" style="display: flex; flex-direction: column;">
+    <div class="container" data-aos="fade-down" data-aos-duration="1000">
+      <h2>Our Mission</h2>
+      <p>
+        Dreams2Code is a non-profit organization that provides free coding classes to high school students in the
+        Central NJ area. We have the vision of transforming our passion of computer science into education for
+        underserved communities. Our goal is to provide students with the tools and resources to succeed in the digital
+        age, and to inspire them to pursue careers in technology. Together, we aspire to spread this passion for
+        technology through hackathons, classes, and aiding businesses. Dreams2Code strives to empower communities and
+        foster a more inclusive future.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- temporary for scrolling -->
+  <div style="height: 100vh" />
+  <div id="cloudBackground" />
+  <script defer>
+    VANTA.CLOUDS({
+      el: "#cloudBackground",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      skyColor: 0x0,
+      sunColor: 0x185cff,
+      sunGlareColor: 0x6e32ff,
+      sunlightColor: 0x30daff,
+      speed: .90
+    })
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
