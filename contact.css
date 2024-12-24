@@ -12,10 +12,12 @@
 /* Form container */
 form {
     width: 100%;
-    max-width: 800px; /* Increased maximum width */
+    max-height: 650px;
+    max-width: 700px;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    padding: 60px; /* Increased padding */
-    border-radius: 12px; /* Rounded corners */
+    padding: 50px;
+    margin: 30px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,24 +44,24 @@ form textarea {
     width: 100%;
     background-color: #333333;
     border: none;
-    border-radius: 8px; /* Slightly more rounded inputs */
-    padding: 16px; /* Larger padding */
-    margin-bottom: 2rem; /* Increased spacing between fields */
-    font-size: 1.2rem; /* Larger input text */
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
     color: #e6e6e6;
 }
 
 form input:focus,
 form textarea:focus {
-    outline: 3px solid #00aaff; /* Slightly thicker focus outline */
+    outline: 3px solid #00aaff;
     box-shadow: 0 0 10px #00aaff;
 }
 
 /* Button styling */
 form button {
     width: 100%;
-    padding: 16px; /* Larger button size */
-    font-size: 1.4rem; /* Larger button text */
+    padding: 13px;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #ffffff;
     background-color: #0084ff;
