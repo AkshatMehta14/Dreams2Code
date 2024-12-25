@@ -2,107 +2,83 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dreams2Code</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams2Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Dreams2Code" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <script src="js/three.min.js"></script>
-  <script src="js/vanta.clouds.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Dreams2Code" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="js/three.min.js"></script>
+    <script src="js/vanta.clouds.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <img src="images/logo-cropped.png" width="50px">
-      Dreams2Code
-    </div>
-    <nav>
-      <ul>
-        <li><a href="/about.html">About Us</a></li>
-        <li><a href="#classes">Our Classes</a></li>
-        <li><a href="#team">Our Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <img src="images/logo-cropped.png" width="50px">
+            Dreams2Code
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="#classes">Our Classes</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<<<<<<< HEAD
-  <section id="contact">
-    <form action="/submit_form" method="post">
-      <h2>Contact Us</h2>
-      <label for="firstName">First Name:</label>
-      <input type="text" id="firstName" name="firstName" required>
-=======
     <section id="contact">
         <form action="/submit_form" method="post">
             <h2>Contact Us</h2>
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" required>
-            
+
             <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="lastName" required>
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
-            <label for="notes">Notes/Questions:</label>
-            <textarea id="notes" name="notes" rows="4"></textarea>
-            
+
             <button type="submit">Submit</button>
         </form>
-    </section>      
->>>>>>> 90b05f7197bd431f5d69ead46da957e46c67e7e9
+    </section>
 
-      <label for="lastName">Last Name:</label>
-      <input type="text" id="lastName" name="lastName" required>
+    <div id="cloudBackground">
+        <script defer>
+            VANTA.CLOUDS({
+                el: "#cloudBackground",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                skyColor: 0x0,
+                sunColor: 0x185cff,
+                sunGlareColor: 0x6e32ff,
+                sunlightColor: 0x30daff,
+                speed: .90
+            })
+        </script>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="notes">Notes/Questions:</label>
-      <textarea id="notes" name="notes" rows="4" required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <div id="cloudBackground">
-    <script defer>
-      VANTA.CLOUDS({
-        el: "#cloudBackground",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        skyColor: 0x0,
-        sunColor: 0x185cff,
-        sunGlareColor: 0x6e32ff,
-        sunlightColor: 0x30daff,
-        speed: .90
-      })
-    </script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>
